@@ -27,6 +27,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--coler-footer);
 }
 
 li {
@@ -90,10 +91,12 @@ h1 {
 .header .inner-feature {
     display: flex;
     font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header .inner-feature > * {
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .header .inner-feature > *:hover {
@@ -103,6 +106,14 @@ h1 {
 
 .header .inner-feature:nth-child(3) {
     margin-right: 0;
+}
+
+.header .login {
+    font-size: 15px;
+}
+
+.header .sign {
+    font-size: 15px;
 }
 
 .header .inner-menu a:hover {
