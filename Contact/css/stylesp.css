@@ -1,0 +1,152 @@
+
+.product .container, .related .container, .btftn .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+/*Sec1*/
+.product .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px;
+}
+.product .img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.product .bookif{
+    flex: 1;
+}
+
+.quantity{
+    display: flex;
+    width: 60%;
+    margin: 10px 0;
+    justify-content: left;
+}
+.quantity input{
+    flex: 1;
+    height: 26px;
+    width: 10%;
+    text-align: center;
+    padding:  5px;
+    margin-right: 10px;
+}
+.quantity button{
+    flex: 6;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+    width: 200px;
+}
+/*Sec2*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+.review-section {
+    width: 50%;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.review-header h2 {
+    margin: 0;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-form label {
+    margin: 10px 0 5px;
+}
+
+.review-form input, .review-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.review-form .rating {
+    display: flex;
+    gap: 5px;
+}
+
+.review-form .rating input {
+    display: none;
+}
+
+.review-form .rating label {
+    font-size: 30px;
+    cursor: pointer;
+    color: gold;
+    text-shadow: 0 0 1px black;
+}
+
+.review-form .rating input:checked ~ label,
+.review-form .rating label:hover,
+.review-form .rating label:hover ~ label {
+    color: rgb(233, 231, 223);
+    text-shadow: 0 0 1px black;
+}
+
+/*tabsec2*/
+
+
+/*Sec3*/
+
+.related .re-prod{
+    display: flex;
+    font-size: 70%;
+    justify-content:left;
+    padding: 10px;
+    margin: 10px;
+}
+.related .re-prod p{
+    font-size: 120%;
+}
+.related .rep{
+    flex: 1;
+    max-width: 20%;
+    padding: 10px;
+}
+.related img{
+    max-width: 100%;
+}
+/*Sec4*/
+.btftn {
+    background: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.btftn .inner-title{
+    font-size: 48px;
+    font-weight: 500;
+    font-family: var(--font-title);
+    margin-bottom: 20px;
+    color: var(--coler-footer);
+}
+.btftn input{
+    width: 70%;
+    height:44px;
+}
