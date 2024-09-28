@@ -1,237 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Books</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" href="./asset/reset.css" />
-        <link rel="stylesheet" href="./asset/base.css" />
-        <link rel="stylesheet" href="./asset/pages/books//style.css" />
-    </head>
-    <body>
-        <!-- Header -->
-        <header class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="inner-logo">
-                        <img src="site-logo.svg" alt="" />
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/asset/base.css">
+    <link rel="stylesheet" href="/asset/reset.css">
+    <link rel="stylesheet" href="/asset/pages/Categories/style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="inner-logo">
+                    <img src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/04/site-logo.svg" alt="" />
+                </div>
+                <ul class="inner-menu">
+                   
+                    <a href="/home.html"><li>Home</li></a>
+                    <a href="/books.html"><li>Books</li></a>
+                    <a href="#"><li>About Author</li></a>
+                    <a href="#"><li>Blog</li></a>
+                    <a href="#"><li>Contact</li></a>
+                </ul>
+                <div class="inner-feature">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div style="color: var(--color-cart)" class="inner-price">$0.00</div>
+                    <i style="color: var(--color-cart)" class="fa-solid fa-cart-plus"></i>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                
+            </div>
+            
+        </div>
+    </header>
+    <!-- End Header -->
 
-                    <ul class="inner-menu">
-                        <a href="/home.html"><li>Home</li></a>
-                        <a href="/books.html"><li>Books</li></a>
-                        <a href="#"><li>About Author</li></a>
-                        <a href="#"><li>Blog</li></a>
-                        <a href="#"><li>Contact</li></a>
-                    </ul>
 
-                    <div class="inner-feature">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <div
-                            style="color: var(--color-cart)"
-                            class="ineer-price"
-                        >
-                            $0.00
-                        </div>
-                        <i
-                            style="color: var(--color-cart)"
-                            class="fa-solid fa-cart-plus"
-                        ></i>
-                    </div>
+    <!--Section 3-->
+<section class="section-3">
+    <div class="container">
+        <div class="left-side">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" id="product-search" placeholder="Tìm kiếm sản phẩm...">
+                <ul id="search-suggestions" class="suggestions-list"></ul>
+            </div>
+            <!-- Product Categories -->
+            <h2>Nhóm Sản Phẩm</h2>
+            <ul class="category-list" id="category-list">
+                <li><a href="#" data-category="all">Tất Cả Nhóm Sản Phẩm</a></li>
+                <li><a href="#" data-category="thieu-nhi">Thiếu Nhi</a></li>
+                <li><a href="#" data-category="giao-khoa">Giáo Khoa - Tham Khảo</a></li>
+                <li><a href="#" data-category="tam-ly">Tâm lý - Kĩ Năng Sống</a></li>
+                <li><a href="#" data-category="van-hoc">Văn Học</a></li>
+                <li><a href="#" data-category="manga">Manga - Comic</a></li>
+                <li><a href="#" data-category="ngoai-ngu">Sách Học Ngoại Ngữ</a></li>
+                <li><a href="#" data-category="kinh-te">Kinh Tế</a></li>
+                <li><a href="#" data-category="lich-su">Lịch Sử - Địa Lý - Tôn Giáo</a></li>
+                <li><a href="#" data-category="nuoi-day-con">Nuôi Dạy Con</a></li>
+            </ul>
+            <h2>Giá</h2>
+            <h2>Tác giả nổi tiếng</h2>
+        </div>
+
+        <div class="right-side">
+            <!-- Image Slider -->
+            <div class="slider-container">
+                <div class="slider">
+                    <img class="slimmage" src="//bookbuy.vn/Res/Images/Album/00456729-e290-44a5-bbe9-da9a261ff77b.png?w=920&amp;h=420&amp;mode=crop" alt="Slide 1">
+                    <img class="slimmage" src="//bookbuy.vn/Res/Images/Album/efefae23-5cb2-42e9-8d4f-59ca99d500af.png?w=920&amp;h=420&amp;mode=crop" alt="Slide 2">
+                    <img class="slimmage" src="C:\Users\ThinkPad\OneDrive\Máy tính\UI-OOP\author-book-store-audio-book-img-1.jpg" alt="Slide 3">
                 </div>
             </div>
-        </header>
-        <!-- End Header -->
+            <!-- Sort by Dropdown -->
+            <div class="filters">              
+                <p>Sắp xếp theo: </p>    
+                <select id="sort-options">
+                    <option value="newest">Mới nhất</option>
+                    <option value="best-seller">Bán chạy nhất</option>
+                    <option value="low-price">Giá thấp nhất</option>
+                    <option value="high-price">Giá cao nhất</option>
+                </select>
+            </div>
 
-        <!-- Sectione 1  -->
-        <section class="section-1">
-            <div class="container">
-                <div class="row">
-                    <h1 class="inner-title">Books</h1>
-                    <p class="inner-desc">
-                        Porttitor in nibh id aliquet quam aliquam aliquet
-                        pulvinar integer dolor quis elementum, dui <br />
-                        cursus nisi, nunc viverra nulla fringilla.
-                    </p>
+            <h4>Sách mới</h4>
+            <div class="inner-block-container">
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                    <h2>Tên sách</h2>
+                    <h3>Giá</h3>
+                    <h3>Tác giả</h3>
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
                 </div>
             </div>
-        </section>
-        <!-- End Sectione 1  -->
+            
 
-        <!-- section-2 -->
-        <section class="section-2">
-            <div class="container">
-                <div class="row">
-                    <div class="inner-content">
-                        <p class="inner-new">New Release</p>
-                        <h1 class="inner-title">The Sons of the Empire</h1>
-                        <p class="inner-desc1">
-                            Convallis feugiat enim consectetur mi purus massa
-                            sit mus in ac lacus odio ut scelerisque parturient.
-                        </p>
-                        <p class="inner-desc2">
-                            Vitae quam interdum turpis faucibus non in quis
-                            volutpat eu, amet enim sed mattis augue sed ultrices
-                            vestibulum vitae praesent vitae id massa a rhoncus
-                            id donec odio.
-                        </p>
-                        <div class="inner-btn">
-                            <button class="button">Buy now</button>
-                        </div>
-                    </div>
-                    <div class="inner-img">
-                        <img
-                            src="./author-book-store-hero-book-cover-img.jpg"
-                            alt=""
-                        />
-                    </div>
+            <h4>Sách bán chạy</h4>
+            <div class="inner-block-container">
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
                 </div>
             </div>
-        </section>
-        <!-- End section-2 -->
-
-        <!-- section-3 -->
-        <section class="section-3">
-            <div class="container">
-                <div class="row">
-                    <h1 class="inner-more">More Books</h1>
-                    <div class="inner-main">
-                        <div class="inner-box">
-                            <img
-                                class="inner-img"
-                                src="./author-book-store-book-cover-06-300x450.jpg"
-                                alt=""
-                            />
-                            <div class="inner-cate">Fantasy</div>
-                            <div class="inner-title">The Born of APLEX</div>
-                            <div class="inner-price">$26.00</div>
-                        </div>
-                        <div class="inner-box">
-                            <img
-                                class="inner-img"
-                                src="./author-book-store-book-cover-06-300x450.jpg"
-                                alt=""
-                            />
-                            <div class="inner-cate">Fantasy</div>
-                            <div class="inner-title">The Born of APLEX</div>
-                            <div class="inner-price">$26.00</div>
-                        </div>
-                        <div class="inner-box">
-                            <img
-                                class="inner-img"
-                                src="./author-book-store-book-cover-06-300x450.jpg"
-                                alt=""
-                            />
-                            <div class="inner-cate">Fantasy</div>
-                            <div class="inner-title">The Born of APLEX</div>
-                            <div class="inner-price">$26.00</div>
-                        </div>
-                        <div class="inner-box">
-                            <img
-                                class="inner-img"
-                                src="./author-book-store-book-cover-06-300x450.jpg"
-                                alt=""
-                            />
-                            <div class="inner-cate">Fantasy</div>
-                            <div class="inner-title">The Born of APLEX</div>
-                            <div class="inner-price">$26.00</div>
-                        </div>
-                        <div class="inner-box">
-                            <img
-                                class="inner-img"
-                                src="./author-book-store-book-cover-06-300x450.jpg"
-                                alt=""
-                            />
-                            <div class="inner-cate">Fantasy</div>
-                            <div class="inner-title">The Born of APLEX</div>
-                            <div class="inner-price">$26.00</div>
-                        </div>
-                        <div class="inner-box">
-                            <img
-                                class="inner-img"
-                                src="./author-book-store-book-cover-06-300x450.jpg"
-                                alt=""
-                            />
-                            <div class="inner-cate">Fantasy</div>
-                            <div class="inner-title">The Born of APLEX</div>
-                            <div class="inner-price">$26.00</div>
-                        </div>
-                        <div class="inner-box">
-                            <img
-                                class="inner-img"
-                                src="./author-book-store-book-cover-06-300x450.jpg"
-                                alt=""
-                            />
-                            <div class="inner-cate">Fantasy</div>
-                            <div class="inner-title">The Born of APLEX</div>
-                            <div class="inner-price">$26.00</div>
-                        </div>
-                        <div class="inner-box">
-                            <img
-                                class="inner-img"
-                                src="./author-book-store-book-cover-06-300x450.jpg"
-                                alt=""
-                            />
-                            <div class="inner-cate">Fantasy</div>
-                            <div class="inner-title">The Born of APLEX</div>
-                            <div class="inner-price">$26.00</div>
-                        </div>
-                    </div>
+            <h4>Sách sắp phát hành</h4>
+            <div class="inner-block-container">
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
+                </div>
+                <div class="inner-block">
+                    <img src="author-book-store-audio-book-img-1.jpg">
                 </div>
             </div>
-        </section>
-        <!-- end section-3 -->
+        </div>
+    </div>
+</section>
+<!--End Section 3-->
 
-        <!-- section -4 -->
-        <section class="section-4">
-            <div class="container">
-                <div class="row">
-                    <h1 class="inner-title">Be the first to know</h1>
-                    <p class="inner-desc">
-                        Lectus amet scelerisque fusce est venenatis, eget enim
-                        <br />
-                        dolor amet vitae pharetra
-                    </p>
+
+    <!-- section -4 -->
+    <section class="section-4">
+        <div class="container">
+            <div class="row">
+                <h1 class="inner-title">Be the first to know</h1>
+                <p class="inner-desc">
+                    Lectus amet scelerisque fusce est venenatis, eget enim
+                    <br />
+                    dolor amet vitae pharetra
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- End section -4 -->
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="inner-logo">
+                    <img src="site-logo-white.svg" alt="" />
+                </div>
+                <ul class="inner-menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Books</li></a>
+                    <a href="#"><li>About Author</li></a>
+                    <a href="#"><li>Blog</li></a>
+                    <a href="#"><li>Contact</li></a>
+                </ul>
+                <div class="inner-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
                 </div>
             </div>
-        </section>
-        <!-- End section -4 -->
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="inner-logo">
-                        <img src="site-logo-white.svg" alt="" />
-                    </div>
-
-                    <ul class="inner-menu">
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>Books</li></a>
-                        <a href="#"><li>About Author</li></a>
-                        <a href="#"><li>Blog</li></a>
-                        <a href="#"><li>Contact</li></a>
-                    </ul>
-
-                    <div class="inner-icon">
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                    </div>
-                </div>
-                <div class="inner-copy">
-                    <p>Copyright © 2024 Book Store | Powered by Book Store</p>
-                </div>
+            <div class="inner-copy">
+                <p>Copyright © 2024 Book Store | Powered by Book Store</p>
             </div>
-        </footer>
-        <!-- End Footer -->
-    </body>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    
+</body>
 </html>
