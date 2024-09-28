@@ -1,0 +1,252 @@
+/* section-1  */
+.section-1 {
+    background: var(--color-background1);
+    text-align: center;
+}
+.section-1 .row {
+    padding: 30px 0;
+}
+
+.section-1 .inner-title {
+    font-size: 88px;
+    font-weight: 600;
+    font-family: var(--font-title);
+    margin-bottom: 50px;
+    color: var(--color-footer); /* Sửa lỗi đánh chính */
+}
+
+.section-1 .inner-desc {
+    font-size: 18px;
+}
+/* end section-1  */
+
+/* section-2  */
+.section-2 {
+    background: var(--color-background1);
+}
+
+.section-2 .row {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-2 .inner-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-2 .inner-content .inner-new {
+    padding: 30px 0;
+    font-size: 15px;
+    color: var(--color-button);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.section-2 .inner-title {
+    font-size: 48px;
+    font-family: var(--font-title);
+    font-weight: 600;
+    padding: 20px 0;
+    color: var(--color-footer); /* Sửa lỗi đánh chính */
+}
+
+.section-2 .inner-desc1 {
+    font-weight: bold;
+}
+/* end section-2  */
+
+/* Section 3 */
+.section-3 .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Left 1/4, Right 3/4 */
+    gap: 10px;
+    padding: 20px;
+    background-color: var(--color-background1);
+}
+
+.left-side {
+    padding: 15px;
+    overflow-y: auto;
+    max-height: 600px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.left-side h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: var(--color-footer);
+    font-weight: bold;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    margin-bottom: 12px;
+}
+
+.category-list li a {
+    text-decoration: none;
+    color: var(--color-footer);
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.category-list li a:hover {
+    color: var(--color-button);
+}
+
+.right-side {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.filters {
+    padding-top: 15px;
+    
+    display: flex;
+    
+    margin-bottom: 25px;
+}
+.filters p{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#sort-options {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    flex-grow: 1;
+    max-width: 200px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 4 sách mỗi hàng, tự động điều chỉnh */
+    gap: 20px;
+}
+
+.inner-box {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.inner-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inner-img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.inner-box p {
+    font-size: 16px;
+    color: var(--color-footer);
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section-3 .container {
+        grid-template-columns: 1fr; /* Chuyển về một cột trên màn hình nhỏ */
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Điều chỉnh cho màn hình nhỏ hơn */
+    }
+}
+.slider-container {
+    width: 920px;
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    width: 2760px; /* 920px * 3 (vì có 3 ảnh) */
+    animation: slide 12s infinite;
+}
+
+.slimmage {
+    width: 920px;
+    height: 420px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%, 20% {
+        transform: translateX(0);
+    }
+    30%, 50% {
+        transform: translateX(-920px); /* Trượt đến ảnh thứ hai */
+    }
+    60%, 80% {
+        transform: translateX(-1840px); /* Trượt đến ảnh thứ ba */
+    }
+    90%, 100% {
+        transform: translateX(0); /* Quay lại ảnh đầu tiên */
+    }
+}
+.inner-block-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.inner-block{
+    flex: 1 1 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    
+  }
+  .inner-block h2{
+    font-family:16px "EB Garamond",serif;
+  }
+  .inner-block img{
+    max-width: 100%;
+    height: auto;
+    
+    
+  }
+      
+/* section 4 */
+.section-4 {
+    background: #ffffff; /* Sửa lỗi đánh chính */
+}
+
+.section-4 .row {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-4 .inner-title {
+    font-size: 48px;
+    color: var(--color-footer);
+    font-weight: 600;
+    font-family: var(--font-title);
+    padding: 30px 0;
+   
+}
+
+.section-4 .inner-desc {
+    font-size: 18px;
+}
+/* End section 4 */
