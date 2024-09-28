@@ -1,0 +1,178 @@
+@ -1,177 +0,0 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Heebo", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    
+}
+.post-container {
+    width: 1182.4px;
+    height: 1261.45px;
+    background-color: white;
+    padding: 85.44px 106.72px;
+    margin-bottom: 20px;
+    margin-left: 130px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.post-image img {
+    width: 968.98px;
+    height: 581.38px;
+    margin: 0px 0px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-content h1 {
+    width:968.98px;
+    height: 31.2px;    
+    color: #25272D;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-family: "EB Garamond", serif;
+}
+
+.post-content .meta {
+    font-size: 14px;
+    color: #999;
+    margin: 10px 0;
+}
+
+.post-content p {
+    margin: 10px 0;
+}
+
+blockquote {
+    border-left: 5px solid #dddddd ;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #dddddd;
+    padding: 20px;
+    font-size: 16.5px;
+    margin: 0 0 1.5em;
+    position: relative;
+    font-style: italic;
+}
+.blockquote cite {
+    display: block;
+    font-style: italic;
+
+}
+.sub {
+    font-family: 'Heebo', sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.subscribe-container {
+
+    text-align: center;
+    max-width: 600px;
+}
+.subscribe-container h1 {
+    font-size: 40px;
+    margin: 0px 0px 28px;
+    color: #333;
+    font-family: 'EB Garamond', serif;
+}
+
+.subscribe-container p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: #6c63ff;
+    border: 2px solid #6c63ff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #6c63ff;
+    color: white;
+}
+
+.comment-section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 10 10 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    padding: 4em 6.67em;
+    border-bottom: 0;
+    margin:100px;
+}
+
+.comment-section h2 {
+    margin-bottom: 10px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group input {
+    width: 32%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-options {
+    margin: 10px 0;
+}
+
+.form-options label {
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}

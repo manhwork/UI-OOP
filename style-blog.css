@@ -1,0 +1,130 @@
+@ -1,129 +0,0 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Heebo", sans-serif;
+    background-color: #f9f9f9;
+    line-height: 160%;
+    font-size: 15px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #25272D;
+
+}
+
+.beta {
+    font-size: 14px;
+    color: #999;
+    margin: 10px 0;
+}
+{
+    font-size: 14px;
+    color: #999;
+    margin: 10px 0;
+}
+}
+.card-content p {
+    margin-bottom: 15px;
+    font-size: 1px;
+    color: #565A61;
+    margin: 0px 0px 15px;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+.sub {
+    font-family: 'Heebo', sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.subscribe-container {
+
+    text-align: center;
+    max-width: 600px;
+}
+.subscribe-container h1 {
+    font-size: 40px;
+    margin: 0px 0px 28px;
+    color: #333;
+    font-family: 'EB Garamond', serif;
+}
+
+.subscribe-container p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: #6c63ff;
+    border: 2px solid #6c63ff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #6c63ff;
+    color: white;
+}
