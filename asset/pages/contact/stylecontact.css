@@ -32,7 +32,7 @@
     width: 100%;
     margin: 0 auto;
     background-color: var(--color-background1);
-    padding: 10px;
+    padding: 50px;
 }
 .info .container{
     display: flex;
@@ -70,6 +70,7 @@ form{
     background-color: var(--coler-footer);
     color: #ffffff;
     padding: 20px;
+    height: 200px;
 }
 .event .button{
     border:1px solid #ffffff;
@@ -83,6 +84,7 @@ form{
     display: flex;
     justify-content: space-between;
     align-content: center;
+    margin: 40px ;
 }
 .event .container{
     display: flex;
@@ -102,6 +104,8 @@ form{
 .btftn {
     background: #ffffff;
     text-align: center;
+    height: 180px;
+    margin: 40px 40px;
 }
 .btftn .inner-title{
     font-size: 48px;
