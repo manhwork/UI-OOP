@@ -12,13 +12,14 @@
     align-items: center;
     justify-content: space-between;
     width: 80%;
-    padding: 20px;
+    padding: 40px 60px;
 }
 .product .img{
     flex: 1;
     display: flex;
     justify-content: center;
 }
+
 .product .bookif{
     flex: 1;
 }
@@ -45,15 +46,16 @@
     width: 200px;
 }
 /*Sec2*/
+
 body {
     font-family: Arial, sans-serif;
 }
 
 .review-section {
     width: 50%;
-    margin: auto;
+    margin: 50px 40px;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
