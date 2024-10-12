@@ -253,6 +253,7 @@
 /* end section-6 */
 .inner-slide{
     background: linear-gradient(45deg, black, #ced4da);
+    /*background: linear-gradient(45deg, #ced4da,black);*/
 }
 .inner-slide img {
     max-height: 600px;  
@@ -263,11 +264,20 @@
     flex: 1;
 
 }
-.inner-slide p{
+.inner-slide .carousel-books{
    margin: auto;
     flex: 1;
-    margin-right: 10%;
+    margin: 10% 10% 10% 1%;
     color: #ffffff;
     
+}
+.inner-slide .button{
+    border:1px solid #ffffff;
+    color: #ffffff;
+}
+.inner-slide .button:hover{
+    background: #ffffff;
+    color: black;
+    border: 1px solid black;
 }
 
