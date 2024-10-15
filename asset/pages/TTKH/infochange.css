@@ -1,0 +1,41 @@
+.avt {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.info-label{
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+.inform h1,.inform img,.inform .ifuser{ 
+    margin: 20px;
+}
+.ttcn .row{
+    border: 1px solid black;
+}
+.ttcn .avt{
+    width: 150px;
+    height: 150px;
+}
+.ttcn .inner-title{
+    display: flex;
+}
+.ttcn{
+    margin: 40px;
+    padding: 30px;
+}
+.inform{
+    padding: 20px;
+}
+.userForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.userForm button{
+    margin-top: 20px;
+}
+.userForm input{
+    width: 130%;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sửa thông tin cá nhân</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/reset.css" />
+    <link rel="stylesheet" href="./asset/base.css" />
+    <link rel="stylesheet" href="./asset/pages/TTKH/infochange.css"
+    </head>
+    <body>
+        <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="inner-logo">
+                    <img src="site-logo.svg" alt="" />
+                </div>
+
+                <ul class="inner-menu">
+                    <a href="./home.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./books.html">
+                        <li>Books</li>
+                    </a>
+                    <a href="./about author.html">
+                        <li>About Author</li>
+                    </a>
+                    <a href="./blog.html">
+                        <li>Blog</li>
+                    </a>
+                    <a href="./contact2.html">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+                <div class="inner-feature">
+                    <a href="TTKH.html"><img src="./ark.jpg" alt="avatar" class="avt"></a>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="">
+                        <div style="color: var(--color-cart)" class="ineer-price">
+                            $0.00
+                    </a>
+                </div>
+                
+               
+                <a href="">
+                    <i style="color: var(--color-cart)" class="fa-solid fa-cart-plus"></i>
+                </a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- End Header -->
+     <!--Section1-->
+    <section class="ttcn">
+        <div class="container">
+            <div class="row">
+                <div class="inform">
+                    <h1 class="inner-title">Sửa thông tin cá nhân</h1>
+                    <img src="./ark.jpg" alt="" class="avt">
+                    <form id="userForm" class="userForm">
+                        
+                        <label for="username" class="info-label">Username:</label>
+                        <input type="text" id="username" name="username" value="">
+            
+                        <label for="email" class="info-label">Email Address:</label>
+                        <input type="email" id="email" name="email" value="">
+            
+                        <label for="name" class="info-label">Name:</label>
+                        <input type="text" id="name" name="name" value="">
+            
+                        <label for="phone" class="info-label">Phone:</label>
+                        <input type="text" id="phone" name="phone" value="">
+            
+                        <label for="gender" class="info-label">Gender:</label>
+                        <select id="gender" name="gender">
+                                <option value="Male" selected>Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                        </select>
+                        
+                        <button class="button" onclick="saveUserInfo()">Lưu</button>
+                    
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--EndSec1-->
+      <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="inner-logo">
+                    <img src="site-logo-white.svg" alt="" />
+                </div>
+
+                <ul class="inner-menu">
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Books</li>
+                    </a>
+                    <a href="#">
+                        <li>About Author</li>
+                    </a>
+                    <a href="#">
+                        <li>Blog</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+
+                <div class="inner-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="inner-copy">
+                <p>Copyright © 2024 Book Store | Powered by Book Store</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    </body>
+</html>

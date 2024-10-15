@@ -41,16 +41,16 @@
                         <li>Contact</li>
                     </a>
                 </ul>
-
                 <div class="inner-feature">
-                    <a href="login.html" class="login">Sign in</a>
-                    <a href="" class="sign">Sign up</a>
+                    <a href="./TTKH.html"><img src="./ark.jpg" alt="avatar" class="avt"></a>
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <a href="">
                         <div style="color: var(--color-cart)" class="ineer-price">
                             $0.00
                     </a>
                 </div>
+                
+               
                 <a href="">
                     <i style="color: var(--color-cart)" class="fa-solid fa-cart-plus"></i>
                 </a>
@@ -70,7 +70,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-block w-100 d-flex">
-                        <img src="./cyber-angel.jpg" alt="First slide">
+                        <img src="./ark.jpg" alt="First slide">
                         <div class="carousel-books">
                             <h1 class="inner-title">Ark Forging</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sed fuga pariatur iure, hic
@@ -406,6 +406,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script>
+        var isLoggedIn=false;
+        if (isLoggedIn) {
+            document.getElementById('avt').style.display = 'block';
+        } else {
+            document.getElementById('inner-feature').style.display = 'block';
+        }
+    </script>
 </body>
 
 </html>
