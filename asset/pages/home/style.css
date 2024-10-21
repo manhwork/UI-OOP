@@ -251,60 +251,33 @@
     font-size: 18px;
 }
 /* end section-6 */
-/*Slide*/
-.slide{
-    margin: 50px;
-    
-    
+.inner-slide{
+    background: linear-gradient(45deg, black, #ced4da);
+    /*background: linear-gradient(45deg, #ced4da,black);*/
 }
-.slide .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    
-    
-}
-.carousel-inner {
-    background-color: #f1f5f8;
-    display: flex;
-    flex-direction: column;
-    width: 900px;
-    height: 700px;
-    border: 5px black;
-}
-.carousel-item {
-
-  max-height: 600px; /* Adjust the height as needed */
-  width: 100%;
+.inner-slide img {
+    max-height: 600px;  
 }
 
-.carousel-content{
-    display: flex;
-    align-items: center;
-}
-.pic{
+.inner-slide img {
+    object-fit: contain;
     flex: 1;
-    margin: 40px;
-   
+
 }
-.item-cap{
+.inner-slide .carousel-books{
+   margin: auto;
     flex: 1;
+    margin: 10% 10% 10% 1%;
+    color: #ffffff;
+    
 }
-
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
-  border-radius: 50%;
-  padding: 10px;
+.inner-slide .button{
+    border:1px solid #ffffff;
+    color: #ffffff;
 }
-
-.carousel-indicators li {
-  background-color: #000; /* Black indicators */
-}
-
-.carousel-indicators .active {
-  background-color: #fff; /* White active indicator */
+.inner-slide .button:hover{
+    background: #ffffff;
+    color: black;
+    border: 1px solid black;
 }
 
